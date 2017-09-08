@@ -7,7 +7,9 @@
 //
 
 import UIKit
+// Package pour la gestion du son
 import AVFoundation
+// Package pour la gestion du social
 import Social
 
 class ViewController: UIViewController {
@@ -22,13 +24,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // Creation d'un objet audioplayer
     var audioplayer = AVAudioPlayer()
     
+    
+    // Fonction pour jouer des sons m4a
     func playSound(nom: String) {
         do {
+            // On charge dans l'objet audioplayer le fichier son à jouer
             audioplayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: nom, ofType: "m4a")!))
             
+            // On prépare la lecture
             audioplayer.prepareToPlay()
+            // On lance la lecture
             audioplayer.play()
         }
         catch {
@@ -36,11 +45,15 @@ class ViewController: UIViewController {
         }
     }
     
+    // Fonction pour jouer des sons mp3
     func playSoundMP3(nom: String) {
         do {
+            // On charge dans l'objet audioplayer le fichier son à jouer
             audioplayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: nom, ofType: "mp3")!))
             
+            // On prépare la lecture
             audioplayer.prepareToPlay()
+            // On lance la lecture
             audioplayer.play()
         }
         catch {
@@ -48,15 +61,21 @@ class ViewController: UIViewController {
         }
     }
     
+    // Fonction pour supprimer la playlist (remise à 0)
     func delSound() {
+        // On déclare les chemins d'accès
         let documentDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as URL
         let fileDestinationUrl = documentDirectoryURL.appendingPathComponent("resultmerge.m4a") as URL
         
+        // On crée un objet filemanager
         let filemgr = FileManager.default
         
+        // On vérifie que le fichier existe
         if filemgr.fileExists(atPath: fileDestinationUrl.path) {
+            // On vérifie qu'on a le droit d'écriture sur ce fichier
             if filemgr.isWritableFile(atPath: fileDestinationUrl.path) {
                 do {
+                    // On le supprime
                     try filemgr.removeItem(atPath : fileDestinationUrl.path)
                 }
                 catch { print(error)}
@@ -68,14 +87,18 @@ class ViewController: UIViewController {
         sleep(1)
     }
     
+    // Fonction pour fusionner deux sons (le deuxième après le premier)
     func Merge(audio1: URL, audio2:  URL)
     {
+        // On crée un objet de composition audio
         let composition = AVMutableComposition()
         
+        // On crée les deux objets tracks qu'on charge avec un objet composition mutable
         let compositionAudioTrack1:AVMutableCompositionTrack = composition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: CMPersistentTrackID())
         
         let compositionAudioTrack2:AVMutableCompositionTrack = composition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: CMPersistentTrackID())
         
+        // On déclare les chemins d'accès
         let documentDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as URL
         
         let fileDestinationUrl = documentDirectoryURL.appendingPathComponent("resultmerge.m4a") as URL
@@ -83,6 +106,7 @@ class ViewController: UIViewController {
         let url1 = audio1
         let url2 = audio2
         
+        // Bon, là je sais pas trop
         let avAsset1 = AVURLAsset(url: url1 as URL, options: nil)
         let avAsset2 = AVURLAsset(url: url2 as URL, options: nil)
         
@@ -92,6 +116,7 @@ class ViewController: UIViewController {
         let assetTrack1:AVAssetTrack = tracks1[0]
         let assetTrack2:AVAssetTrack = tracks2[0]
         
+        // On charge en variable les durées des sons
         let duration1: CMTime = assetTrack1.timeRange.duration
         let duration2: CMTime = assetTrack2.timeRange.duration
         
@@ -99,7 +124,9 @@ class ViewController: UIViewController {
         let timeRange2 = CMTimeRangeMake(kCMTimeZero, duration2)
         do
         {
+            // On charge le premier son dans l'objet composition
             try compositionAudioTrack1.insertTimeRange(timeRange1, of: assetTrack1, at: kCMTimeZero)
+            // On charge le deuxième son dans l'objet composition à partir de t = fin du premier son
             try compositionAudioTrack2.insertTimeRange(timeRange2, of: assetTrack2, at: duration1)
         }
         catch
@@ -107,8 +134,10 @@ class ViewController: UIViewController {
             print(error)
         }
         
+        // On supprime la playlist pré-existente
         delSound()
         
+        // On charge le tout dans le chemin indiqué plus haut
         let assetExport = AVAssetExportSession(asset: composition, presetName: AVAssetExportPresetAppleM4A)
         assetExport?.outputFileType = AVFileTypeAppleM4A
         assetExport?.outputURL = fileDestinationUrl
@@ -133,6 +162,8 @@ class ViewController: UIViewController {
     }
     
     
+    
+    // Fonction pour fusionner un son avec rien => permet d'initialiser la playlist avec un premier son
     func MergeVide(audio1: URL)
     {
         let documentDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as URL
@@ -180,6 +211,7 @@ class ViewController: UIViewController {
     }
     
     
+    // Fonction qui utilise MergeVide ou Merge en fonction de la présence ou non de la playlist
     func addSon(nom: String){
         let documentDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as URL
         let fileDestinationUrl = documentDirectoryURL.appendingPathComponent("resultmerge.m4a") as URL
@@ -194,18 +226,12 @@ class ViewController: UIViewController {
             MergeVide(audio1: urlFile)
         }
     }
-
-    @IBAction func Son1(_ sender: Any) {
-        playSoundMP3(nom: "dabdabdab")
-        addSon(nom: "dabdabdab")
-    }
     
-    @IBAction func Son2(_ sender: Any) {
-        playSoundMP3(nom: "ichich")
-        addSon(nom: "ichich")
-    }
     
+    // Boutton Partager qui permet de partager la playlist via tous moyens
     @IBAction func Partager(_ sender: Any) {
+        
+        // On indique les chemins d'accès
         let documentDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as URL
         let fileDestinationUrl = documentDirectoryURL.appendingPathComponent("resultmerge.m4a") as URL
         
@@ -216,6 +242,7 @@ class ViewController: UIViewController {
         self.present(activityM, animated: true, completion: nil)
     }
 
+    // Boutton pour lire la playlist
     @IBAction func Lecture(_ sender: Any) {
         let documentDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as URL
         let fileDestinationUrl = documentDirectoryURL.appendingPathComponent("resultmerge.m4a") as URL
@@ -230,7 +257,8 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    // Gros pack pour tous les boutons
+    // Deux fonctions en un clic : première fonction pour lire le son, la deuxième pour l'ajouter à la playlist.
     @IBAction func BonneRep(_ sender: Any) {
         playSoundMP3(nom: "bonnereponse")
         addSon(nom: "bonnereponse")
@@ -364,12 +392,5 @@ class ViewController: UIViewController {
         playSoundMP3(nom: "ichich")
         addSon(nom: "ichich")
     }
-    
-    
-    
-    
-    
-    
-    
 }
 
