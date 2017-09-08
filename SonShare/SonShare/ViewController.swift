@@ -341,6 +341,11 @@ class ViewController: UIViewController {
         addSon(nom: "dab")
     }
     
+    @IBAction func FilsDe(_ sender: Any) {
+        playSoundMP3(nom: "filsdepite")
+        addSon(nom: "filsdepite")
+    }
+    
     @IBAction func DabDabDab(_ sender: Any) {
         playSoundMP3(nom: "dabdabdab")
         addSon(nom: "dabdabdab")

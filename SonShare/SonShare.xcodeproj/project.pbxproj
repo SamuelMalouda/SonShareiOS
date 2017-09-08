@@ -40,6 +40,7 @@
 		7E3829F71F62A2D100184D5A /* guedro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829DF1F62A2D100184D5A /* guedro.mp3 */; };
 		7E3829F81F62A2D100184D5A /* joursguedro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829E01F62A2D100184D5A /* joursguedro.mp3 */; };
 		7E3829F91F62A2D100184D5A /* ttlesjours.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829E11F62A2D100184D5A /* ttlesjours.mp3 */; };
+		7E3829FB1F62EF4B00184D5A /* filsdepite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829FA1F62EF4B00184D5A /* filsdepite.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		7E3829DF1F62A2D100184D5A /* guedro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guedro.mp3; sourceTree = "<group>"; };
 		7E3829E01F62A2D100184D5A /* joursguedro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joursguedro.mp3; sourceTree = "<group>"; };
 		7E3829E11F62A2D100184D5A /* ttlesjours.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ttlesjours.mp3; sourceTree = "<group>"; };
+		7E3829FA1F62EF4B00184D5A /* filsdepite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = filsdepite.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				7E3829CC1F62A2D100184D5A /* dab.mp3 */,
 				7E3829C61F62995100184D5A /* dabdabdab.mp3 */,
 				7E3829CD1F62A2D100184D5A /* f5f5f5.mp3 */,
+				7E3829FA1F62EF4B00184D5A /* filsdepite.mp3 */,
 				7E3829CE1F62A2D100184D5A /* grosjoint.mp3 */,
 				7E3829DF1F62A2D100184D5A /* guedro.mp3 */,
 				7E3829CF1F62A2D100184D5A /* hendecks.mp3 */,
@@ -338,6 +341,7 @@
 				7E3829A21F62977B00184D5A /* LaunchScreen.storyboard in Resources */,
 				7E3829E81F62A2D100184D5A /* hendecksvp.mp3 in Resources */,
 				7E3829E41F62A2D100184D5A /* dab.mp3 in Resources */,
+				7E3829FB1F62EF4B00184D5A /* filsdepite.mp3 in Resources */,
 				7E3829F31F62A2D100184D5A /* lalala2.mp3 in Resources */,
 				7E3829E91F62A2D100184D5A /* merge.mp3 in Resources */,
 				7E3829F41F62A2D100184D5A /* lepers92.mp3 in Resources */,
