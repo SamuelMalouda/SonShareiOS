@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E3829981F62977B00184D5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3829971F62977B00184D5A /* AppDelegate.swift */; };
+		7E38299A1F62977B00184D5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3829991F62977B00184D5A /* ViewController.swift */; };
+		7E38299D1F62977B00184D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E38299B1F62977B00184D5A /* Main.storyboard */; };
+		7E38299F1F62977B00184D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E38299E1F62977B00184D5A /* Assets.xcassets */; };
+		7E3829A21F62977B00184D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829A01F62977B00184D5A /* LaunchScreen.storyboard */; };
+		7E3829AD1F62977B00184D5A /* SonShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3829AC1F62977B00184D5A /* SonShareTests.swift */; };
+		7E3829B81F62977B00184D5A /* SonShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3829B71F62977B00184D5A /* SonShareUITests.swift */; };
+		7E3829C81F62995100184D5A /* dabdabdab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829C61F62995100184D5A /* dabdabdab.mp3 */; };
+		7E3829C91F62995100184D5A /* ichich.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829C71F62995100184D5A /* ichich.mp3 */; };
+		7E3829E21F62A2D100184D5A /* zorofort.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829CA1F62A2D100184D5A /* zorofort.mp3 */; };
+		7E3829E31F62A2D100184D5A /* alcooleau.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829CB1F62A2D100184D5A /* alcooleau.mp3 */; };
+		7E3829E41F62A2D100184D5A /* dab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829CC1F62A2D100184D5A /* dab.mp3 */; };
+		7E3829E51F62A2D100184D5A /* f5f5f5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829CD1F62A2D100184D5A /* f5f5f5.mp3 */; };
+		7E3829E61F62A2D100184D5A /* grosjoint.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829CE1F62A2D100184D5A /* grosjoint.mp3 */; };
+		7E3829E71F62A2D100184D5A /* hendecks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829CF1F62A2D100184D5A /* hendecks.mp3 */; };
+		7E3829E81F62A2D100184D5A /* hendecksvp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D01F62A2D100184D5A /* hendecksvp.mp3 */; };
+		7E3829E91F62A2D100184D5A /* merge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D11F62A2D100184D5A /* merge.mp3 */; };
+		7E3829EA1F62A2D100184D5A /* michtos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D21F62A2D100184D5A /* michtos.mp3 */; };
+		7E3829EB1F62A2D100184D5A /* nulfort.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D31F62A2D100184D5A /* nulfort.mp3 */; };
+		7E3829EC1F62A2D100184D5A /* rap2016fort.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D41F62A2D100184D5A /* rap2016fort.mp3 */; };
+		7E3829ED1F62A2D100184D5A /* suuhfort.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D51F62A2D100184D5A /* suuhfort.mp3 */; };
+		7E3829EE1F62A2D100184D5A /* ursus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D61F62A2D100184D5A /* ursus.mp3 */; };
+		7E3829EF1F62A2D100184D5A /* bonnereponse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D71F62A2D100184D5A /* bonnereponse.mp3 */; };
+		7E3829F01F62A2D100184D5A /* consulte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D81F62A2D100184D5A /* consulte.mp3 */; };
+		7E3829F11F62A2D100184D5A /* jardiniere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829D91F62A2D100184D5A /* jardiniere.mp3 */; };
+		7E3829F21F62A2D100184D5A /* jepasse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829DA1F62A2D100184D5A /* jepasse.mp3 */; };
+		7E3829F31F62A2D100184D5A /* lalala2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829DB1F62A2D100184D5A /* lalala2.mp3 */; };
+		7E3829F41F62A2D100184D5A /* lepers92.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829DC1F62A2D100184D5A /* lepers92.mp3 */; };
+		7E3829F51F62A2D100184D5A /* onseregale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829DD1F62A2D100184D5A /* onseregale.mp3 */; };
+		7E3829F61F62A2D100184D5A /* pascadutout.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829DE1F62A2D100184D5A /* pascadutout.mp3 */; };
+		7E3829F71F62A2D100184D5A /* guedro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829DF1F62A2D100184D5A /* guedro.mp3 */; };
+		7E3829F81F62A2D100184D5A /* joursguedro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829E01F62A2D100184D5A /* joursguedro.mp3 */; };
+		7E3829F91F62A2D100184D5A /* ttlesjours.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E3829E11F62A2D100184D5A /* ttlesjours.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E3829A91F62977B00184D5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E38298C1F62977B00184D5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3829931F62977B00184D5A;
+			remoteInfo = SonShare;
+		};
+		7E3829B41F62977B00184D5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E38298C1F62977B00184D5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3829931F62977B00184D5A;
+			remoteInfo = SonShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E3829941F62977B00184D5A /* SonShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3829971F62977B00184D5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E3829991F62977B00184D5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E38299C1F62977B00184D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E38299E1F62977B00184D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E3829A11F62977B00184D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E3829A31F62977B00184D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3829A81F62977B00184D5A /* SonShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3829AC1F62977B00184D5A /* SonShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonShareTests.swift; sourceTree = "<group>"; };
+		7E3829AE1F62977B00184D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3829B31F62977B00184D5A /* SonShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3829B71F62977B00184D5A /* SonShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonShareUITests.swift; sourceTree = "<group>"; };
+		7E3829B91F62977B00184D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3829C61F62995100184D5A /* dabdabdab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dabdabdab.mp3; sourceTree = "<group>"; };
+		7E3829C71F62995100184D5A /* ichich.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ichich.mp3; sourceTree = "<group>"; };
+		7E3829CA1F62A2D100184D5A /* zorofort.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zorofort.mp3; sourceTree = "<group>"; };
+		7E3829CB1F62A2D100184D5A /* alcooleau.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alcooleau.mp3; sourceTree = "<group>"; };
+		7E3829CC1F62A2D100184D5A /* dab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dab.mp3; sourceTree = "<group>"; };
+		7E3829CD1F62A2D100184D5A /* f5f5f5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f5f5f5.mp3; sourceTree = "<group>"; };
+		7E3829CE1F62A2D100184D5A /* grosjoint.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grosjoint.mp3; sourceTree = "<group>"; };
+		7E3829CF1F62A2D100184D5A /* hendecks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hendecks.mp3; sourceTree = "<group>"; };
+		7E3829D01F62A2D100184D5A /* hendecksvp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hendecksvp.mp3; sourceTree = "<group>"; };
+		7E3829D11F62A2D100184D5A /* merge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = merge.mp3; sourceTree = "<group>"; };
+		7E3829D21F62A2D100184D5A /* michtos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = michtos.mp3; sourceTree = "<group>"; };
+		7E3829D31F62A2D100184D5A /* nulfort.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nulfort.mp3; sourceTree = "<group>"; };
+		7E3829D41F62A2D100184D5A /* rap2016fort.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rap2016fort.mp3; sourceTree = "<group>"; };
+		7E3829D51F62A2D100184D5A /* suuhfort.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suuhfort.mp3; sourceTree = "<group>"; };
+		7E3829D61F62A2D100184D5A /* ursus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ursus.mp3; sourceTree = "<group>"; };
+		7E3829D71F62A2D100184D5A /* bonnereponse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bonnereponse.mp3; sourceTree = "<group>"; };
+		7E3829D81F62A2D100184D5A /* consulte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = consulte.mp3; sourceTree = "<group>"; };
+		7E3829D91F62A2D100184D5A /* jardiniere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jardiniere.mp3; sourceTree = "<group>"; };
+		7E3829DA1F62A2D100184D5A /* jepasse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jepasse.mp3; sourceTree = "<group>"; };
+		7E3829DB1F62A2D100184D5A /* lalala2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lalala2.mp3; sourceTree = "<group>"; };
+		7E3829DC1F62A2D100184D5A /* lepers92.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lepers92.mp3; sourceTree = "<group>"; };
+		7E3829DD1F62A2D100184D5A /* onseregale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onseregale.mp3; sourceTree = "<group>"; };
+		7E3829DE1F62A2D100184D5A /* pascadutout.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pascadutout.mp3; sourceTree = "<group>"; };
+		7E3829DF1F62A2D100184D5A /* guedro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guedro.mp3; sourceTree = "<group>"; };
+		7E3829E01F62A2D100184D5A /* joursguedro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joursguedro.mp3; sourceTree = "<group>"; };
+		7E3829E11F62A2D100184D5A /* ttlesjours.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ttlesjours.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E3829911F62977B00184D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3829A51F62977B00184D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3829B01F62977B00184D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E38298B1F62977B00184D5A = {
+			isa = PBXGroup;
+			children = (
+				7E3829961F62977B00184D5A /* SonShare */,
+				7E3829AB1F62977B00184D5A /* SonShareTests */,
+				7E3829B61F62977B00184D5A /* SonShareUITests */,
+				7E3829951F62977B00184D5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E3829951F62977B00184D5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E3829941F62977B00184D5A /* SonShare.app */,
+				7E3829A81F62977B00184D5A /* SonShareTests.xctest */,
+				7E3829B31F62977B00184D5A /* SonShareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E3829961F62977B00184D5A /* SonShare */ = {
+			isa = PBXGroup;
+			children = (
+				7E3829971F62977B00184D5A /* AppDelegate.swift */,
+				7E3829991F62977B00184D5A /* ViewController.swift */,
+				7E38299B1F62977B00184D5A /* Main.storyboard */,
+				7E38299E1F62977B00184D5A /* Assets.xcassets */,
+				7E3829A01F62977B00184D5A /* LaunchScreen.storyboard */,
+				7E3829A31F62977B00184D5A /* Info.plist */,
+				7E3829C51F62993A00184D5A /* Sons */,
+			);
+			path = SonShare;
+			sourceTree = "<group>";
+		};
+		7E3829AB1F62977B00184D5A /* SonShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3829AC1F62977B00184D5A /* SonShareTests.swift */,
+				7E3829AE1F62977B00184D5A /* Info.plist */,
+			);
+			path = SonShareTests;
+			sourceTree = "<group>";
+		};
+		7E3829B61F62977B00184D5A /* SonShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3829B71F62977B00184D5A /* SonShareUITests.swift */,
+				7E3829B91F62977B00184D5A /* Info.plist */,
+			);
+			path = SonShareUITests;
+			sourceTree = "<group>";
+		};
+		7E3829C51F62993A00184D5A /* Sons */ = {
+			isa = PBXGroup;
+			children = (
+				7E3829CB1F62A2D100184D5A /* alcooleau.mp3 */,
+				7E3829D71F62A2D100184D5A /* bonnereponse.mp3 */,
+				7E3829D81F62A2D100184D5A /* consulte.mp3 */,
+				7E3829CC1F62A2D100184D5A /* dab.mp3 */,
+				7E3829C61F62995100184D5A /* dabdabdab.mp3 */,
+				7E3829CD1F62A2D100184D5A /* f5f5f5.mp3 */,
+				7E3829CE1F62A2D100184D5A /* grosjoint.mp3 */,
+				7E3829DF1F62A2D100184D5A /* guedro.mp3 */,
+				7E3829CF1F62A2D100184D5A /* hendecks.mp3 */,
+				7E3829D01F62A2D100184D5A /* hendecksvp.mp3 */,
+				7E3829C71F62995100184D5A /* ichich.mp3 */,
+				7E3829D91F62A2D100184D5A /* jardiniere.mp3 */,
+				7E3829DA1F62A2D100184D5A /* jepasse.mp3 */,
+				7E3829E01F62A2D100184D5A /* joursguedro.mp3 */,
+				7E3829DB1F62A2D100184D5A /* lalala2.mp3 */,
+				7E3829DC1F62A2D100184D5A /* lepers92.mp3 */,
+				7E3829D11F62A2D100184D5A /* merge.mp3 */,
+				7E3829D21F62A2D100184D5A /* michtos.mp3 */,
+				7E3829D31F62A2D100184D5A /* nulfort.mp3 */,
+				7E3829DD1F62A2D100184D5A /* onseregale.mp3 */,
+				7E3829DE1F62A2D100184D5A /* pascadutout.mp3 */,
+				7E3829D41F62A2D100184D5A /* rap2016fort.mp3 */,
+				7E3829D51F62A2D100184D5A /* suuhfort.mp3 */,
+				7E3829E11F62A2D100184D5A /* ttlesjours.mp3 */,
+				7E3829D61F62A2D100184D5A /* ursus.mp3 */,
+				7E3829CA1F62A2D100184D5A /* zorofort.mp3 */,
+			);
+			name = Sons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E3829931F62977B00184D5A /* SonShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3829BC1F62977B00184D5A /* Build configuration list for PBXNativeTarget "SonShare" */;
+			buildPhases = (
+				7E3829901F62977B00184D5A /* Sources */,
+				7E3829911F62977B00184D5A /* Frameworks */,
+				7E3829921F62977B00184D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonShare;
+			productName = SonShare;
+			productReference = 7E3829941F62977B00184D5A /* SonShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E3829A71F62977B00184D5A /* SonShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3829BF1F62977B00184D5A /* Build configuration list for PBXNativeTarget "SonShareTests" */;
+			buildPhases = (
+				7E3829A41F62977B00184D5A /* Sources */,
+				7E3829A51F62977B00184D5A /* Frameworks */,
+				7E3829A61F62977B00184D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3829AA1F62977B00184D5A /* PBXTargetDependency */,
+			);
+			name = SonShareTests;
+			productName = SonShareTests;
+			productReference = 7E3829A81F62977B00184D5A /* SonShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E3829B21F62977B00184D5A /* SonShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3829C21F62977B00184D5A /* Build configuration list for PBXNativeTarget "SonShareUITests" */;
+			buildPhases = (
+				7E3829AF1F62977B00184D5A /* Sources */,
+				7E3829B01F62977B00184D5A /* Frameworks */,
+				7E3829B11F62977B00184D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3829B51F62977B00184D5A /* PBXTargetDependency */,
+			);
+			name = SonShareUITests;
+			productName = SonShareUITests;
+			productReference = 7E3829B31F62977B00184D5A /* SonShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E38298C1F62977B00184D5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Samuel Malouda";
+				TargetAttributes = {
+					7E3829931F62977B00184D5A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JMU323884T;
+						ProvisioningStyle = Automatic;
+					};
+					7E3829A71F62977B00184D5A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JMU323884T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E3829931F62977B00184D5A;
+					};
+					7E3829B21F62977B00184D5A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JMU323884T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E3829931F62977B00184D5A;
+					};
+				};
+			};
+			buildConfigurationList = 7E38298F1F62977B00184D5A /* Build configuration list for PBXProject "SonShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E38298B1F62977B00184D5A;
+			productRefGroup = 7E3829951F62977B00184D5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E3829931F62977B00184D5A /* SonShare */,
+				7E3829A71F62977B00184D5A /* SonShareTests */,
+				7E3829B21F62977B00184D5A /* SonShareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E3829921F62977B00184D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3829F51F62A2D100184D5A /* onseregale.mp3 in Resources */,
+				7E3829ED1F62A2D100184D5A /* suuhfort.mp3 in Resources */,
+				7E3829E61F62A2D100184D5A /* grosjoint.mp3 in Resources */,
+				7E3829EB1F62A2D100184D5A /* nulfort.mp3 in Resources */,
+				7E3829C91F62995100184D5A /* ichich.mp3 in Resources */,
+				7E3829E31F62A2D100184D5A /* alcooleau.mp3 in Resources */,
+				7E3829F81F62A2D100184D5A /* joursguedro.mp3 in Resources */,
+				7E3829F11F62A2D100184D5A /* jardiniere.mp3 in Resources */,
+				7E3829EC1F62A2D100184D5A /* rap2016fort.mp3 in Resources */,
+				7E3829F71F62A2D100184D5A /* guedro.mp3 in Resources */,
+				7E3829E51F62A2D100184D5A /* f5f5f5.mp3 in Resources */,
+				7E3829F21F62A2D100184D5A /* jepasse.mp3 in Resources */,
+				7E3829C81F62995100184D5A /* dabdabdab.mp3 in Resources */,
+				7E3829E71F62A2D100184D5A /* hendecks.mp3 in Resources */,
+				7E3829A21F62977B00184D5A /* LaunchScreen.storyboard in Resources */,
+				7E3829E81F62A2D100184D5A /* hendecksvp.mp3 in Resources */,
+				7E3829E41F62A2D100184D5A /* dab.mp3 in Resources */,
+				7E3829F31F62A2D100184D5A /* lalala2.mp3 in Resources */,
+				7E3829E91F62A2D100184D5A /* merge.mp3 in Resources */,
+				7E3829F41F62A2D100184D5A /* lepers92.mp3 in Resources */,
+				7E3829F61F62A2D100184D5A /* pascadutout.mp3 in Resources */,
+				7E3829EA1F62A2D100184D5A /* michtos.mp3 in Resources */,
+				7E3829EF1F62A2D100184D5A /* bonnereponse.mp3 in Resources */,
+				7E3829F01F62A2D100184D5A /* consulte.mp3 in Resources */,
+				7E3829E21F62A2D100184D5A /* zorofort.mp3 in Resources */,
+				7E3829EE1F62A2D100184D5A /* ursus.mp3 in Resources */,
+				7E3829F91F62A2D100184D5A /* ttlesjours.mp3 in Resources */,
+				7E38299F1F62977B00184D5A /* Assets.xcassets in Resources */,
+				7E38299D1F62977B00184D5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3829A61F62977B00184D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3829B11F62977B00184D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E3829901F62977B00184D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E38299A1F62977B00184D5A /* ViewController.swift in Sources */,
+				7E3829981F62977B00184D5A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3829A41F62977B00184D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3829AD1F62977B00184D5A /* SonShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3829AF1F62977B00184D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3829B81F62977B00184D5A /* SonShareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E3829AA1F62977B00184D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3829931F62977B00184D5A /* SonShare */;
+			targetProxy = 7E3829A91F62977B00184D5A /* PBXContainerItemProxy */;
+		};
+		7E3829B51F62977B00184D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3829931F62977B00184D5A /* SonShare */;
+			targetProxy = 7E3829B41F62977B00184D5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E38299B1F62977B00184D5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E38299C1F62977B00184D5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E3829A01F62977B00184D5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E3829A11F62977B00184D5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E3829BA1F62977B00184D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E3829BB1F62977B00184D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E3829BD1F62977B00184D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JMU323884T;
+				INFOPLIST_FILE = SonShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samuelmalouda.SonShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7E3829BE1F62977B00184D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JMU323884T;
+				INFOPLIST_FILE = SonShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samuelmalouda.SonShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7E3829C01F62977B00184D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JMU323884T;
+				INFOPLIST_FILE = SonShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samuelmalouda.SonShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonShare.app/SonShare";
+			};
+			name = Debug;
+		};
+		7E3829C11F62977B00184D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JMU323884T;
+				INFOPLIST_FILE = SonShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samuelmalouda.SonShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonShare.app/SonShare";
+			};
+			name = Release;
+		};
+		7E3829C31F62977B00184D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = JMU323884T;
+				INFOPLIST_FILE = SonShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samuelmalouda.SonShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SonShare;
+			};
+			name = Debug;
+		};
+		7E3829C41F62977B00184D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = JMU323884T;
+				INFOPLIST_FILE = SonShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samuelmalouda.SonShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SonShare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E38298F1F62977B00184D5A /* Build configuration list for PBXProject "SonShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3829BA1F62977B00184D5A /* Debug */,
+				7E3829BB1F62977B00184D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3829BC1F62977B00184D5A /* Build configuration list for PBXNativeTarget "SonShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3829BD1F62977B00184D5A /* Debug */,
+				7E3829BE1F62977B00184D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E3829BF1F62977B00184D5A /* Build configuration list for PBXNativeTarget "SonShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3829C01F62977B00184D5A /* Debug */,
+				7E3829C11F62977B00184D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E3829C21F62977B00184D5A /* Build configuration list for PBXNativeTarget "SonShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3829C31F62977B00184D5A /* Debug */,
+				7E3829C41F62977B00184D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E38298C1F62977B00184D5A /* Project object */;
+}
